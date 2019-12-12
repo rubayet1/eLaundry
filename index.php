@@ -36,7 +36,7 @@ session_start();
 
 
 <form method="post">
-<div class="shadow p-3 mb-5 bg-white rounded box">
+<div class="shadow p-3 mb-5 bg-white rounded box dj">
 
 
 
@@ -72,7 +72,7 @@ session_start();
           }
           else
           {
-            echo '<script type="text/javascript">sweetAlert("", "Wrong Password", "error");</script>';
+            echo '<script type="text/javascript">sweetAlert("", "Wrong Username Or Password", "error");</script>';
           }
        }
 
@@ -82,6 +82,7 @@ session_start();
 
 
       ?>
+
 
      <!-- Button trigger modal -->
  <button type="button" class="btn btn-danger mbutton" data-toggle="modal" data-target="#exampleModalCenter">
@@ -98,7 +99,7 @@ session_start();
            <span aria-hidden="true">&times;</span>
          </button>
        </div>
-        <!-- Modal body -->
+        <!-- Modal  -->
        <div class="modal-body modaldesign">
          <div class="form-group">
              <label for="CustName" class="col-sm-3 control-label">Username</label>
@@ -188,7 +189,7 @@ session_start();
       }
      else
     {
-      echo '<script type="text/javascript">alert("Username already taken");</script>';
+      echo '<script type="text/javascript">sweetAlert("", "Username already taken!!!", "error");</script>';
     }
 
 

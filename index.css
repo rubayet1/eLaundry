@@ -1,6 +1,6 @@
 .kire
 {
-margin-top: 35%;
+margin-top: 30%;
 margin-bottom: 10px;
 width: 40%;
 margin-left: 30%;
@@ -30,6 +30,7 @@ width: 40%;
   text-align: right;
   background-color: white;
 }
+
 .mbutton
 {
   margin-left: 30%;
@@ -38,7 +39,8 @@ width: 40%;
 }
 .body1
 {
-  background-color: #a132f0;
+  background-image: url("services/displayback.jpg");
+  background-size: cover;
 
 }
 .modaldesign
@@ -60,6 +62,8 @@ text-align: left;
 font-size: 30px;
 
 margin-left: 10%;
+margin-top: -100px;
+
 
 
 }
@@ -70,6 +74,7 @@ margin-left: 10%;
   text-align: left;
   font-size: 30px;
   margin-left: 10%;
+
 
 
 
@@ -89,7 +94,7 @@ margin-left: 10%;
 }
 .body2
 {
-  background-image: url('background3.jpg');
+  background-image: url('services/displayback6.jpg');
    background-size: 100% 100%;
 
     background-attachment: fixed;
@@ -108,26 +113,529 @@ margin-left: 10%;
 .nav1
 {
   height: 100px;
+
 }
+
 .navside
 {
   margin-right:  21%;
 }
 .navlogo
 {
-  margin-left:  9.5%;
+  margin-top: 10px;
+  font-size: 35px;
+  margin-left: 9.5%;
+  margin-right: 40px;
+   font-weight: bold;
+}
+.sociallogo
+{
+
+  margin-top: 0px;
+  margin-right: 10px;
+}
+.navgap
+{
+
+  margin-right: 15px;
+
 }
 .footersize
 {
 margin-top: 5%;
 }
-.cardaccount
-{ margin-top: 100px;
+.cardaccount3
+{
+
+ margin-left: 75%;
+ position: absolute;
+
+  margin-right: 200px;
+  margin-top:90px;
+
+}
+.profile
+{
+  margin-top: 100px;
   margin-left: 200px;
 }
-.cardaccount1
+.displaytab
 {
   margin-top: -178px;
   margin-left:  520px;
 
+}
+.displaytab1
+{
+  margin-top: -178px;
+  margin-left:  520px;
+  height: 350px;
+
+}
+.dj
+{
+  background-image: url("boxback.jpg");
+  background-size: cover;
+}
+
+.remove_button
+{
+margin-top: -54px;
+float: right;
+
+font-size: 10px;
+width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  border-radius: 35px;
+
+  line-height: 1.33;
+
+
+}
+
+#gap
+{
+  margin-bottom: 35px;
+}
+
+.checkout
+{
+
+  width: 340px;
+
+}
+.add
+{ width: 340px;
+  margin-left: 6px;
+  padding-top: 18px;
+  padding-left: 7px;
+  height: 60px;
+
+}
+.tagtk
+{
+  display: inline;
+}
+#total
+{
+  text-align: right;
+  margin-top: -40px;
+  margin-right: 10px;
+}
+.dateandtime
+{
+
+  margin-top: 30px;
+  margin-left: 20%;
+  padding-left: 35px;
+}
+
+.timing
+{
+  margin-top: 10px;
+
+  width: 150px;
+margin-left: 50%;
+ margin-top: -37px;
+
+
+}
+.Additionalcomment
+{
+  margin-top: 30px;
+  margin-left: 20%;
+  padding-left: 35px;
+  padding-right: 35px;
+
+}
+.payment
+{
+  margin-top: 30px;
+  margin-left: 20%;
+  padding-left: 35px;
+  padding-right: 35px;
+
+}
+.total1
+{
+margin-top:-274px;
+margin-left: 57%;
+height: 274px;
+}
+.box-example {
+  width: 400px;
+  border: 7px solid #a132f0;
+  padding: 25px;
+
+}
+.subtk,.totaltk,.deltk
+{
+text-align: right;
+margin-top: -30px;
+}
+#backb
+{
+  margin-top: 30px;
+  margin-left: 20%;
+  width: 175px;
+}
+#placeb
+{   margin-top: 30px;
+  float: right;
+  margin-right: 20%;
+  width: 175px;
+}
+ .boxalign1
+ {
+margin-left: 17%;
+display: inline-block;
+padding-left: 35px;
+padding-right: 35px;
+height: 275px;
+
+ }
+.boxalign2
+{
+  margin-top: 30px;
+ margin-left: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  display: inline-block;
+  height: 275px;
+
+}
+.boxalign4
+{
+ margin-top: 50px;
+ margin-left: 30%;
+ padding-left: 35px;
+ padding-right: 35px;
+ display: inline-block;
+ height: 275px;
+}
+.boxalign5
+{
+  padding-left: 35px;
+  padding-right: 35px;
+display: inline-block;
+margin-left: 20px;
+height: 275px;
+}
+/**************************
+********* Pricing Table CSS *
+**************************/
+
+.pricing_heading {
+  margin-top: 120px
+}
+
+.pricing_heading h2,
+.pricing_heading p {
+  color:#4e4e4e;
+}
+
+.pricing-area h1 {
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.pricing-area span {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.pricing-area h3,
+.pricing-area span  {
+  color: #fff;
+}
+
+.plan {
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.pricing-area ul {
+  background:#FAFAFA;
+  padding: 0;
+  margin: 0;
+}
+
+.pricing-area ul li {
+  list-style: none;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.pricing-area ul li:nth-child(even){
+  background:#f5f5f5
+}
+
+.pricing-area .price-three img,
+.pricing-area .price-six img {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+.pricing-area .heading-one,
+.pricing-area .heading-two,
+.pricing-area .heading-three {
+  padding:17px 0;
+  border-radius:2px 2px 0 0;
+}
+
+.pricing-area .heading-one,
+.pricing-area .heading-two,
+.pricing-area .heading-three,
+.pricing-area .heading-four,
+.pricing-area .heading-five,
+.pricing-area .heading-six,
+.pricing-area .heading-seven {
+  margin-left: -10px
+}
+
+
+.pricing-area .heading-one,
+.pricing-area .price-one .plan-action .btn-primary {
+  background: #e24f43
+}
+
+.pricing-area .heading-two,
+.pricing-area .price-two .plan-action .btn-primary {
+  background:#27AE60;
+}
+
+.pricing-area .heading-three,
+.pricing-area .price-three .plan-action .btn-primary {
+  background: #f39c12;
+}
+
+.pricing-area .heading-four,
+.pricing-area .price-four .plan-action .btn-primary {
+  background: #5c5c5c
+}
+
+.pricing-area .heading-five,
+.pricing-area .price-five .plan-action .btn-primary {
+  background: #5c5c5c
+}
+
+.pricing-area .heading-six,
+.pricing-area .price-six .plan-action .btn-primary {
+  background: #e24f43
+;
+}
+
+.pricing-area .heading-seven,
+.pricing-area .price-seven .plan-action .btn-primary {
+  background: #5c5c5c
+}
+
+.pricing-area .bg{
+ background: #fafafa
+}
+
+.pricing-area .heading-one h3:before {
+  border-color: #bf4539 transparent transparent;
+}
+
+.pricing-area .heading-two h3:before {
+  border-color: #1f8c4d transparent transparent;
+}
+
+.pricing-area .heading-three h3:before {
+  border-color: #d4880f transparent transparent;
+}
+
+.pricing-area .heading-four h3:before {
+  border-color: #424242 transparent transparent;
+}
+
+.pricing-area .heading-five h3:before {
+  border-color: #424242 transparent transparent;
+}
+
+.pricing-area .heading-six h3:before {
+  border-color: #bf4539 transparent transparent;
+}
+
+.pricing-area .heading-seven h3:before {
+  border-color: #424242 transparent transparent;
+}
+
+.pricing-area h3:before {
+  border-color: #D4880F transparent transparent;
+  border-radius: 5px 0 0 0px;
+  border-style: solid;
+  border-width: 12px;
+  content: "";
+  height: 0;
+  left: 4px;
+  position: absolute;
+  top: 78px;
+  width: 0;
+  z-index: -999;
+}
+
+.small-pricing h3:after {
+  height:94px;
+}
+
+.small-pricing h3:before {
+  top: 74px;
+}
+
+.plan-action {
+  height: 40px;
+}
+
+.pricing-area .plan-action .btn-primary {
+  position: relative;
+  padding:5px 20px;
+  color: #fff
+;
+  margin-top: 5px;
+}
+
+.pricing-area .plan-action .btn-primary:before {
+  border-color: #E24F43 transparent transparent;
+  border-radius: 5px 0 0 0;
+  border-style: solid;
+  border-width: 12px;
+  bottom: -12px;
+  content: "";
+  height: 0;
+  left: -9px;
+  position: absolute;
+  width: 0;
+  z-index: -1;
+}
+
+.pricing-area .plan-action .btn-primary:after {
+  border-color: #E24F43 transparent transparent;
+  border-radius: 5px 0 0 0;
+  border-style: solid;
+  border-width: 12px;
+  bottom: -12px;
+  content: "";
+  height: 0;
+  position: absolute;
+  right: -9px;
+  width: 0;
+  z-index: -1;
+}
+
+.pricing-area .price-two .plan-action .btn-primary:before,
+.pricing-area .price-two .plan-action .btn-primary:after {
+  border-color: #1f8c4d transparent transparent;
+}
+
+.pricing-area .price-three .plan-action .btn-primary:before,
+.pricing-area .price-three .plan-action .btn-primary:after {
+  border-color: #d4880f transparent transparent;
+}
+
+.pricing-area .price-four .plan-action .btn-primary:before,
+.pricing-area .price-four .plan-action .btn-primary:after,
+.pricing-area .price-five .plan-action .btn-primary:before,
+.pricing-area .price-five .plan-action .btn-primary:after,
+.pricing-area .price-seven .plan-action .btn-primary:before,
+.pricing-area .price-seven .plan-action .btn-primary:after  {
+  border-color: #424242 transparent transparent;
+  right: -9px;
+}
+
+.pricing-area .price-six .plan-action .btn-primary:before,
+.pricing-area .price-six .plan-action .btn-primary:after {
+  border-color: #bf4539 transparent transparent;
+  right: -9px;
+}
+/**************************
+********* Pricing Table CSS *
+**************************/
+
+.section-title {
+    font-size: 35px;
+    color: #002f86;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pricing-box {
+    background: #fff none repeat scroll 0 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    transition: all 0.3s ease 0s;
+    min-height: 585px;
+}
+.pricing-box:hover{
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.pricing-box .plan-header {
+    padding: 20px 15px 0;
+    text-align: center;
+}
+.pricing-box .plan-header .image {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.pricing-box .plan-header h2 {
+    font-size: 30px;
+    line-height: 30px;
+    margin: 0 0 20px;
+}
+
+.pricing-box .plan-header .price {
+    font-family: "Arial",Arial,Tahoma,sans-serif;
+}
+.pricing-box .plan-header .price sup.period {
+    font-size: 15px;
+    line-height: 15px;
+    position: relative;
+    top: -15px;
+    color: #a8a8a8;
+}
+.pricing-box .plan-header .price sup.currency {
+    font-size: 20px;
+    line-height: 20px;
+    position: relative;
+    top: -10px;
+}
+.pricing-box .plan-header .price sup.currency, .pricing-box .plan-header .price > span {
+    color: #2e96db;
+}
+.pricing-box .plan-header .price span {
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0 5px;
+}
+.pricing-box .plan-inside {
+    padding: 10px 30px;
+    text-align: center;
+}
+.pricing-box .plan-inside ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0;
+    padding: 11px 10px;
+    text-align: center;
+}
+.pricing-box .plan-inside ul {
+    font-size: 100%;
+    line-height: normal;
+}
+.pricing-box .plan-footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
 }

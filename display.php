@@ -7,84 +7,77 @@ session_start();
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-<script src="addcart.js">
 
-</script>
-    <!-- Latest compiled and minified CSS -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
- <!-- jQuery library -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
- <!-- Popper JS -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
- <!-- Latest compiled JavaScript -->
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
- <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+ <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+
  <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
 
     <title></title>
   </head>
   <body class="body2">
-    <!--Navbar -->
-<nav class="mb-1 navbar navbar-expand-lg navbar-dark info-color nav1">
-  <p class="navbar-brand navlogo " href="#">Navbar</p>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4"
-    aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse " id="navbarSupportedContent-4">
-    <ul class="navbar-nav ml-auto navside">
-      <form  action="" method="post">
+  <?php include 'navbar.php' ?>
 
+<!--/.card  -->
+<div class="card cardaccount3" style="width: 22rem;">
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-user "></i> Profile </a>
-        <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-          <button class="dropdown-item" name="myaccount" >My account</button>
-          <button class="dropdown-item" name="logout" >Log out</button>
-
-          <?php
-
-            if(isset($_POST['logout']))
-            {
-              session_destroy(); //destroy the session
-              header("location: index.php"); //to redirect back to "index.php" after logging out
-              exit();
-            }
-            if(isset($_POST['myaccount']))
-            {
-               //destroy the session
-              header("location: myaccount.php"); //to redirect back to "index.php" after logging out
-
-            }
-           ?>
-</form>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!--/.Navbar  -->
+  <div class="card-body ">
+    <h5 class="card-title" >Your Cart</h5>
 
 
 
-<p class="select" >Select your item</p>
+
+    <p class="card-text " id= "cart"><nav class="nav flex-column"></nav></p>
+
+
+
+    </div>
+    <!--Panel-->
+<div class="card card-block add">
+
+    <p class="card-text">Total</p>
+    <p id="total">0tk</p>;
+
+
+</div>
+          <form  action=" " method="post">
+           <button  id="out" type="submit" class="btn btn-info checkout " name="checkout1">GO TO CHECKOUT</button>
+           <?php
+
+             if(isset($_POST['checkout1']))
+             {
+
+               header("location: checkout.php"); //to redirect back to "index.php" after logging out
+
+             }
+
+            ?>
+          </form>
+</div>
+
+
+</div>
+
+<!--/.card  -->
+<p class="select" > </p>
     <!-- Collapse buttons -->
 <div>
-  <a class="btn btn-light-blue collapse1" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Kameez - Salwar & Other Ladies Dress
+  <a class="btn btn-light-blue collapse2" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+Shirt / T-Shirt / Apron
   </a>
 
 
@@ -96,15 +89,101 @@ session_start();
   <div class="mt-3">
     <!-- /Body element -->
     <ul class="list-group list-group-flush table1">
-  <li class="list-group-item">Cras justo odio  <button type="button" class="btn btn-outline-info waves-effect cartbtn add addbtn" id="addcart" >ADD TO CART</button><p class="pricetag">Starts from 30tk</p></li>
+  <li class="list-group-item ">Shirt (40tk)  <button type="button" name="Shirt (40tk)" value="40tk" class="btn btn-outline-info waves-effect cartbtn  click"  >ADD TO CART</button></li>
 
-  <li class="list-group-item">Dapibus ac facilisis in<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button></li>
-  <li class="list-group-item">Morbi leo risus<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button></li>
-  <li class="list-group-item">Porta ac consectetur ac<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button></li>
-  <li class="list-group-item">Vestibulum at eros<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button></li>
+  <li  class="list-group-item ">Baby Shirt (25tk)<button type="button" name="Baby Shirt (25tk) " value="25tk"class="btn btn-outline-info waves-effect cartbtn click">ADD TO CART</button></li>
+  <li class="list-group-item ">T-Shirt - Half (30tk)<button type="button" name="T-Shirt - Half (30tk)" value="30tk" class="btn btn-outline-info waves-effect cartbtn click">ADD TO CART</button></li>
+  <li class="list-group-item">T-Shirt - Full (40tk)<button type="button" name="T-Shirt - Full (40tk)" value="40tk" class="btn btn-outline-info waves-effect cartbtn click">ADD TO CART</button></li>
+  <li class="list-group-item">Apron (50tk)<button type="button" name="Apron (50tk)" value="50tk" class="btn btn-outline-info waves-effect cartbtn click">ADD TO CART</button></li>
 </ul>
   </div>
 </div>
+
+<!-- / scr element -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+    var maxField = 10; //Input fields increment limitation
+    var addButton = $('.click'); //Add button selector
+    var wrapper = $('.card-body'); //Input field wrapper
+    var totalPrice=0;
+
+
+    var x = 1; //Initial field counter is 1
+
+
+    //Once add button is clicked
+    $(addButton).click(function(){
+        //Check maximum number of input fields
+        var id1 = $(this).attr('name');
+        var id2 = $(this).attr('value');
+        var fieldHTML = '<div id="gap"> <p   class="rmv" >'+id1+' </p><button  type="button"  value="'+id2+'" class="remove_button btn btn-danger yoyo">DEL</button> </div>'; //New input field html
+
+
+
+
+        if(x < maxField){
+            x++; //Increment field counter
+
+            $(wrapper).append(fieldHTML); //Add field html
+
+
+            totalPrice=totalPrice+ parseInt(id2);
+
+             document.getElementById('total').innerHTML=totalPrice +"Tk";
+        }
+      if(x==4)
+        {
+
+
+
+
+        }
+    });
+    $('#out').click(function() {
+      var elements = document.getElementsByClassName('rmv');
+      var x= [];
+
+      for (i = 0; i < elements.length ;i++) {
+        x.push(elements[i].innerHTML);
+
+       }
+
+      console.log(x);
+  $.ajax({
+    url:"checkout.php",
+    method:"post",
+    data:{x:JSON.stringify(x),y:totalPrice,},
+
+    success :function (res)
+    {
+      console.log(res);
+    }
+
+
+  });
+
+
+        });
+
+
+    //Once remove button is clicked
+    $(wrapper).on('click', '.remove_button', function(e){
+
+        e.preventDefault();
+
+        $(this).parent('div').remove(); //Remove field html
+        x--; //Decrement field counter
+
+        var id2 = $(this).attr('value');
+
+        totalPrice=totalPrice-parseInt(id2);
+
+        document.getElementById('total').innerHTML=totalPrice +"Tk";
+    });
+});
+  </script>
+
 
 <!-- / Collapsible element -->
 <!-- Collapse buttons -->
@@ -132,7 +211,7 @@ Saree & Others
 <!-- / Collapsible element -->
 <div>
 <a class="btn btn-light-blue collapse2" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
-Suits
+Kameez - Salwar & Other Ladies Dress
 </a>
 
 
@@ -179,7 +258,7 @@ Coat / Jacket / Blazer (Winter ware)
 <!-- / Collapsible element -->
 <div>
 <a class="btn btn-light-blue collapse2" data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
-Shirt / T-Shirt / Apron
+Suits
 </a>
 
 
@@ -202,7 +281,7 @@ Shirt / T-Shirt / Apron
 <!-- / Collapsible element -->
 <div>
 <a class="btn btn-light-blue collapse2" data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample">
-Suits
+Car Seat Cover
 </a>
 
 
@@ -225,163 +304,6 @@ Suits
 
 <!-- card -->
 
-<!-- Footer -->
-<footer class="page-footer font-small stylish-color-dark pt-4 footersize">
-
-<!-- Footer Links -->
-<div class="container text-center text-md-left">
-
-<!-- Grid row -->
-<div class="row">
-
-  <!-- Grid column -->
-  <div class="col-md-4 mx-auto">
-
-    <!-- Content -->
-    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-    <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-      consectetur
-      adipisicing elit.</p>
-
-  </div>
-  <!-- Grid column -->
-
-  <hr class="clearfix w-100 d-md-none">
-
-  <!-- Grid column -->
-  <div class="col-md-2 mx-auto">
-
-    <!-- Links -->
-    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-    <ul class="list-unstyled">
-      <li>
-        <a href="#!">Link 1</a>
-      </li>
-      <li>
-        <a href="#!">Link 2</a>
-      </li>
-      <li>
-        <a href="#!">Link 3</a>
-      </li>
-      <li>
-        <a href="#!">Link 4</a>
-      </li>
-    </ul>
-
-  </div>
-  <!-- Grid column -->
-
-  <hr class="clearfix w-100 d-md-none">
-
-  <!-- Grid column -->
-  <div class="col-md-2 mx-auto">
-
-    <!-- Links -->
-    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-    <ul class="list-unstyled">
-      <li>
-        <a href="#!">Link 1</a>
-      </li>
-      <li>
-        <a href="#!">Link 2</a>
-      </li>
-      <li>
-        <a href="#!">Link 3</a>
-      </li>
-      <li>
-        <a href="#!">Link 4</a>
-      </li>
-    </ul>
-
-  </div>
-  <!-- Grid column -->
-
-  <hr class="clearfix w-100 d-md-none">
-
-  <!-- Grid column -->
-  <div class="col-md-2 mx-auto">
-
-    <!-- Links -->
-    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-    <ul class="list-unstyled">
-      <li>
-        <a href="#!">Link 1</a>
-      </li>
-      <li>
-        <a href="#!">Link 2</a>
-      </li>
-      <li>
-        <a href="#!">Link 3</a>
-      </li>
-      <li>
-        <a href="#!">Link 4</a>
-      </li>
-    </ul>
-
-  </div>
-  <!-- Grid column -->
-
-</div>
-<!-- Grid row -->
-
-</div>
-<!-- Footer Links -->
-
-<hr>
-
-<!-- Call to action -->
-<ul class="list-unstyled list-inline text-center py-2">
-<li class="list-inline-item">
-  <h5 class="mb-1">Register for free</h5>
-</li>
-<li class="list-inline-item">
-  <a href="#!" class="btn btn-danger btn-rounded">Sign up!</a>
-</li>
-</ul>
-<!-- Call to action -->
-
-<hr>
-
-<!-- Social buttons -->
-<ul class="list-unstyled list-inline text-center">
-<li class="list-inline-item">
-  <a class="btn-floating btn-fb mx-1">
-    <i class="fab fa-facebook-f"> </i>
-  </a>
-</li>
-<li class="list-inline-item">
-  <a class="btn-floating btn-tw mx-1">
-    <i class="fab fa-twitter"> </i>
-  </a>
-</li>
-<li class="list-inline-item">
-  <a class="btn-floating btn-gplus mx-1">
-    <i class="fab fa-google-plus-g"> </i>
-  </a>
-</li>
-<li class="list-inline-item">
-  <a class="btn-floating btn-li mx-1">
-    <i class="fab fa-linkedin-in"> </i>
-  </a>
-</li>
-<li class="list-inline-item">
-  <a class="btn-floating btn-dribbble mx-1">
-    <i class="fab fa-dribbble"> </i>
-  </a>
-</li>
-</ul>
-<!-- Social buttons -->
-
-<!-- Copyright -->
-<div class="footer-copyright text-center py-3">© 2018 Copyright:
-<a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-</div>
-<!-- Copyright -->
-
-</footer>
-<!-- Footer -->
+<?php include 'footer.php' ?>
 </body>
 </html>

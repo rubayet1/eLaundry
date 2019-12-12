@@ -1,34 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <!-- Latest compiled and minified CSS -->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
- <!-- jQuery library -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
- <!-- Popper JS -->
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
- <!-- Latest compiled JavaScript -->
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
- <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
  <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
 
-    <meta charset="utf-8">
+
     <title></title>
   </head>
   <body>
     <!-- Footer -->
-<footer class="page-footer font-small stylish-color-dark pt-4 fsize">
+<footer class="page-footer font-small stylish-color-dark pt-4 footersize">
 
   <!-- Footer Links -->
   <div class="container text-center text-md-left">
@@ -40,10 +22,8 @@
       <div class="col-md-4 mx-auto">
 
         <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-          consectetur
-          adipisicing elit.</p>
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">eLaundry</h5>
+        <p>We provide premium washing and dry cleaning service leveraging online & mobile based technology with free pick up & delivery. It's an affordable and convenient way of getting your wash, laundry and dry-clean done with premium quality. </p>
 
       </div>
       <!-- Grid column -->
