@@ -239,14 +239,7 @@ foreach($_SESSION["cart"] as $value){
     </script>
 
    <!-- front_back -->
-<form  action="display.php " method="post">
-
-
-<button id="backb"type="submit" class="btn btn-info" name="backb">Back</button>
-
-<button id="placeb" type="button" class="btn btn-success">Place Order</button>
-
- </form>
+<button> Submit</button>
 <!-- front_back -->
 
 
