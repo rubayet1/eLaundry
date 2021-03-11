@@ -200,8 +200,8 @@ Saree & Others
 <div class="collapse" id="collapseExample2">
 <div class="mt-3">
   <ul class="list-group list-group-flush table1">
-  <li class="list-group-item">Cras justo odio  <button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button><p class="pricetag">Starts from 30tk</p></li>
-  <li class="list-group-item">Dapibus ac facilisis in<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button></li>
+  <li class="list-group-item">Dhuti<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button><p class="pricetag">Starts from 30tk</p></li>
+  <li class="list-group-item">Kurti<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button></li>
   <li class="list-group-item">Morbi leo risus<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button></li>
   <li class="list-group-item">Porta ac consectetur ac<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button></li>
   <li class="list-group-item">Vestibulum at eros<button type="button" class="btn btn-outline-info waves-effect cartbtn">ADD TO CART</button></li>
